@@ -81,7 +81,7 @@ router.put('/residence/:id', async (req, res) => {
     }
 })
 
-//delete a residence
+// delete a residence
 router.delete('/residence/:id', async (req, res) => {
     try {
         const { id } = req.params

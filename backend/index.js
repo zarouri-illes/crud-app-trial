@@ -15,9 +15,10 @@ app.use(express.json())
 
 // Middleware to handle CORS policy
 // CORS, You need it for authorized resource sharing with external third parties. For example, you need CORS when you want to pull data from external APIs that are public or authorized.
-// Option 1: Allow all origins with default cors(*)
+//Option 1: Allow all origins with default cors(*)
 app.use(cors())
-// Option 2: Allow Custom Origins
+//Option 2: Allow Custom Origins
+/*
 app.use(
     cors(
         {
@@ -27,6 +28,7 @@ app.use(
         }
     )
 )
+*/
 
 app.get('/', (req, res) => {
     res.status(234).send("hello")
